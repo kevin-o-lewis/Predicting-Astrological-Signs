@@ -1,8 +1,15 @@
 # Predicting-Astrological-Signs
+
+## Project Description
+What is astrology
+Why I chose this topic
+
 ## Data Description
 59946 Rows, 31 features
 
 ## Data Cleaning
+Methodology: preserve as much original data as possible, including outliers and nulls values.
+
  0   age          59946 non-null  int64 \  
  1   status       59946 non-null  object \
  2   sex          59946 non-null  object \
@@ -19,16 +26,41 @@
  7   drugs        45866 non-null  object
  - filled nulls with "no answer"
  
- 8   education    53318 non-null  object 
+ 8   education    53318 non-null  object
+ - filled nulls with "no answer"
+ 
  9   ethnicity    54266 non-null  object 
+ 
+ 
  10  height       59943 non-null  float64
- 11  income       59946 non-null  int64  
- 12  job          51748 non-null  object 
- 13  last_online  59946 non-null  object 
- 14  location     59946 non-null  object 
- 15  offspring    24385 non-null  object 
- 16  pets         40025 non-null  object 
- 17  religion     39720 non-null  object 
+ - filled nulls with mean (68)
+ - replaced outliers (defined as singular occurances) with mean (68)
+ 
+ 11  income       59946 non-null  int64
+ - 48442 nulls entered as -1
+ - nulls account for ~80% of column data
+ - Removed column
+ 
+ 12  job          51748 non-null  object
+ - filled nulls with "no answer"
+ 
+ 13  last_online  59946 non-null  object
+ - skip for now
+ 
+ 14  location     59946 non-null  object
+ - skip for now
+ 
+ 15  offspring    24385 non-null  object
+ - filled nulls with "no answer"
+ 
+ 16  pets         40025 non-null  object
+ - filled nulls with "no answer"
+ 
+ 17  religion     39720 non-null  object
+ - filled nulls with "no answer"
+ - split into two columns, one for religion, one for how serious they take it. 
+ - example: {religion:'catholicism but not too serious about it'} becomes {religion_actual: 'catholicism', religion_seriousness: 'but not too serious about it'}
+ 
  18  sign         48890 non-null  object 
  19  smokes       54434 non-null  object 
  20  speaks       59896 non-null  object 
