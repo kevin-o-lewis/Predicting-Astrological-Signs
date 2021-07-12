@@ -61,8 +61,13 @@ Methodology: preserve as much original data as possible, including outliers and 
  - split into two columns, one for religion, one for how serious they take it. 
  - example: {religion:'catholicism but not too serious about it'} becomes {religion_actual: 'catholicism', religion_seriousness: 'but not too serious about it'}
  
- 18  sign         48890 non-null  object 
- 19  smokes       54434 non-null  object 
+ 18  sign         48890 non-null  object
+ - removed entire row if sign == null (due to sign beinmg target)
+ - handled same as religion, split into two columns. 'sign_actual' will be target
+ 
+ 19  smokes       54434 non-null  object
+ - filled nulls with "no answer"
+ 
  20  speaks       59896 non-null  object 
  21  essay0       54458 non-null  object 
  22  essay1       52374 non-null  object 
