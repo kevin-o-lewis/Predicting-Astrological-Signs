@@ -3,14 +3,22 @@
 59946 Rows, 31 features
 
 ## Data Cleaning
- 0   age          59946 non-null  int64  
- 1   status       59946 non-null  object 
- 2   sex          59946 non-null  object 
- 3   orientation  59946 non-null  object 
- 4   body_type    54650 non-null  object 
- 5   diet         35551 non-null  object 
- 6   drinks       56961 non-null  object 
- 7   drugs        45866 non-null  object 
+ 0   age          59946 non-null  int64 \  
+ 1   status       59946 non-null  object \
+ 2   sex          59946 non-null  object \
+ 3   orientation  59946 non-null  object \
+ 4   body_type    54650 non-null  object \
+ - filled nulls with "no answer"
+ 
+ 5   diet         35551 non-null  object
+ - filled nulls with "no answer"
+ 
+ 6   drinks       56961 non-null  object
+ - filled nulls with "no answer"
+ 
+ 7   drugs        45866 non-null  object
+ - filled nulls with "no answer"
+ 
  8   education    53318 non-null  object 
  9   ethnicity    54266 non-null  object 
  10  height       59943 non-null  float64
