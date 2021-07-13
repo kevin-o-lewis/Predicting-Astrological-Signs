@@ -87,3 +87,6 @@ Methodology: preserve as much original data as possible, including outliers and 
        'religion_actual', 'religion_seriousness'
  8.2 % of predictions were correct on the test set
  this is slightly worse than randomly choosing one of the 12 classes, which would give you 8.3 % correct predictions
+
+
+when I changed my target variable to sign_seriousness (how seriously a user takes their sign), I reached 51.1% correct predictions, with four classes ('and it matters a lot', 'and its fun to think about', 'but it doesnt matter', 'no_answer')
