@@ -79,3 +79,11 @@ Methodology: preserve as much original data as possible, including outliers and 
  28  essay7       47495 non-null  object 
  29  essay8       40721 non-null  object 
  30  essay9       47343 non-null  object 
+ 
+ ## First Model
+ simple logistic regression using the following columns:
+ 'age', 'status', 'sex', 'orientation', 'body_type', 'diet', 'drinks',
+       'drugs', 'education', 'job', 'offspring', 'pets', 'smokes',
+       'religion_actual', 'religion_seriousness'
+ 8.2 % of predictions were correct on the test set
+ this is slightly worse than randomly choosing one of the 12 classes, which would give you 8.3 % correct predictions
