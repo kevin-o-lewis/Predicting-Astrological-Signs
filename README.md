@@ -4,6 +4,7 @@
 Astrology is a pseudoscience that claims to divine information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects. -Wikipedia
 
 ## Data Description
+The dataset contains almost 60,000 user profiles from a popular dating website. Any personal information about the users has been removed.
 59946 Rows, 31 features
 
 ## Data Cleaning
