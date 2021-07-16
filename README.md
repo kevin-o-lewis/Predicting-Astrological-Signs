@@ -8,7 +8,9 @@ The dataset contains almost 60,000 user profiles from a popular dating website. 
 59946 Rows, 31 features
 
 ## Data Cleaning
-Methodology: preserve as much original data as possible, including outliers and nulls values.
+I read the csv data into a pandas dataframe to begin cleaning and exploring the data.
+
+My plan for cleaning was to preserve as much original data as possible.
 
 Continous variables - filled nulls and outliers with mean
 Categorical variables - filled nulls with 'no answer' string
@@ -17,14 +19,25 @@ Special cases: the 'sign' and 'religion' features contained the user's sign/reli
  
 ## EDA
 
+![dist_of_age](https://user-images.githubusercontent.com/83669741/126005860-e404a94c-edca-436b-96eb-669d00c6993e.png)
+![dist_of_sex](https://user-images.githubusercontent.com/83669741/126005862-615d1f89-9ec7-4f7b-a4a6-2db65e46379a.png)
+![dist_of_sign_seriousness](https://user-images.githubusercontent.com/83669741/126005864-781457af-a07d-4a66-bd3d-f0c90ba22ec7.png)
+![dist_of_signs](https://user-images.githubusercontent.com/83669741/126005866-4f49c019-7fdb-4c9c-a636-8ef98d834600.png)
 
- 
  ## First Model
- simple logistic regression using the following columns:
-'age', 'status', 'sex', 'orientation', 'body_type', 'diet', 'drinks',
-       'drugs', 'education', 'height', 'job', 'offspring', 'pets', 'smokes', 'religion_actual', 'religion_seriousness'
- 8.2 % of predictions were correct on the test set
- this is slightly worse than randomly choosing one of the 12 classes, which would give you 8.3 % correct predictions
+To start, I separated my categorical and contextual features and built the following models with only the categorical features:
+
+Model, Accuracy:
+Baseline (random) 8.33%
+Logistic Regression 8.12%
+Random Forest Classifier 8.35%
+Gradient Boosting Classifier 8.50%
+Gradient Boosting Classifier (With GridSearch Best Params) 8.92%
 
 
-when I changed my target variable to sign_seriousness (how seriously a user takes their sign), I reached 51.1% correct predictions, with four classes ('and it matters a lot', 'and its fun to think about', 'but it doesnt matter', 'no_answer')
+## NLP Model
+Model, Accuracy:
+Baseline (random) 8.33% 
+Logistic Regression 8.63%
+Random Forest Classifier 8.70%
+Gradient Boosting Classifier 8.71%
