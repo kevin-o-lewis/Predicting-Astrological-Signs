@@ -41,3 +41,12 @@ Baseline (random) 8.33%
 Logistic Regression 8.63%
 Random Forest Classifier 8.70%
 Gradient Boosting Classifier 8.71%
+
+
+## Comprehensive Model
+Next, I wanted to combine my categorical and contextual features into one model.
+
+Model, Accuracy:
+Baseline (random) 8.33%
+Random Forest Classifier 8.28%
+Gradient Boosting Classifier 9.26%
