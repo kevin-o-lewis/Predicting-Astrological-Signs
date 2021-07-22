@@ -13,8 +13,11 @@ I read the csv data into a pandas dataframe to begin cleaning and exploring the 
 My plan for cleaning was to preserve as much original data as possible.
 
 Continous variables - filled nulls and outliers with mean
+
 Categorical variables - filled nulls with 'no answer' string
+
 Contextuals features - removed nulls and combined text answers due to the orignal dataset having unstorted text answers
+
 Special cases: the 'sign' and 'religion' features contained the user's sign/religion, but also how important their sign/religion is to them. I separted these variables into two separate features - one for the actual sign/religion, and another for the user's feelings about their sign/religion.
  
 ## EDA
