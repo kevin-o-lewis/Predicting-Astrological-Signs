@@ -63,3 +63,18 @@ Random Forest Classifier 8.28%
 
 Gradient Boosting Classifier 9.26%
 
+## Further Studies
+More parameter tweaking
+
+More text pre-processing
+
+Examine feature importances 
+
+Use Topic Modeling to determine the topic of each essay question
+
+Vector similarity analysis
+
+Recommendation matching 
+
+Analyze if people with the same sign or traditionally “compatible” signs match together
+
