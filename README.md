@@ -41,6 +41,8 @@ Gradient Boosting Classifier (With GridSearch Best Params) 8.92%
 
 
 ## NLP Model
+Then I wanted to do the same approach of modeling only the contextual free-text questions to predict astrological signs.
+
 Model, Accuracy:
 
 Baseline (random) 8.33% 
