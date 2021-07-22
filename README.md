@@ -28,18 +28,27 @@ Special cases: the 'sign' and 'religion' features contained the user's sign/reli
 To start, I separated my categorical and contextual features and built the following models with only the categorical features:
 
 Model, Accuracy:
+
 Baseline (random) 8.33%
+
 Logistic Regression 8.12%
+
 Random Forest Classifier 8.35%
+
 Gradient Boosting Classifier 8.50%
+
 Gradient Boosting Classifier (With GridSearch Best Params) 8.92%
 
 
 ## NLP Model
 Model, Accuracy:
+
 Baseline (random) 8.33% 
+
 Logistic Regression 8.63%
+
 Random Forest Classifier 8.70%
+
 Gradient Boosting Classifier 8.71%
 
 
@@ -47,6 +56,10 @@ Gradient Boosting Classifier 8.71%
 Next, I wanted to combine my categorical and contextual features into one model.
 
 Model, Accuracy:
+
 Baseline (random) 8.33%
+
 Random Forest Classifier 8.28%
+
 Gradient Boosting Classifier 9.26%
+
